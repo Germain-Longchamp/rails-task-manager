@@ -1,0 +1,19 @@
+<h1>Tasks List</h1>
+<p>Find me in app/views/tasks/index.html.erb</p>
+
+<ul>
+  <% @tasks.each do |task| %>
+
+    <% if @tasks.completed? %>
+    <li>
+      <%= "#{task.title} : #{task.details}" %>
+    </li>
+    <% else %>
+    <li>
+      <%= "#{task.title} : #{task.details}" %>
+    </li>
+    <% end %>
+
+  <% end %>
+
+</ul>
